@@ -1,0 +1,44 @@
+# KisanVaani — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Web Framework ────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12        # For form data (Twilio webhook)
+pydantic==2.9.2
+pydantic-settings==2.6.1
+
+# ── IBM Watson SDKs ──────────────────────────────────────────
+ibm-watson==8.1.0
+ibm-cloud-sdk-core==3.22.0
+ibm-watsonx-ai==1.1.7           # watsonx.ai SDK
+
+# ── Twilio ───────────────────────────────────────────────────
+twilio==9.3.7
+
+# ── Supabase ─────────────────────────────────────────────────
+supabase==2.10.0
+
+# ── HTTP Client ──────────────────────────────────────────────
+httpx==0.27.2
+requests==2.32.3
+
+# ── Neo4j ────────────────────────────────────────────────────
+neo4j==5.26.0
+
+# ── ML / Image Processing (Crop Doctor) ─────────────────────
+# TensorFlow does NOT support Python 3.13 yet
+# Use torch instead — works on Python 3.13
+torch==2.5.1                    # PyTorch for PlantVillage model
+torchvision==0.20.1             # Image transforms
+Pillow==11.0.0                  # Image processing
+numpy==2.1.3
+
+# ── Utilities ────────────────────────────────────────────────
+python-dotenv==1.0.1
+aiofiles==24.1.0
+
+# ── Testing ──────────────────────────────────────────────────
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx==0.27.2                   # For TestClient
